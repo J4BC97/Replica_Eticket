@@ -1,0 +1,397 @@
+* {
+    background-color: rgb(207, 207, 207);
+    margin: 0 auto;
+    padding: 0 auto;
+    box-sizing: border-box;
+    font-family: 'Montserrta', sans-serif;
+    list-style: none;
+}
+
+.contenedor-header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: rgb(45, 45, 145);
+    padding: 15px;
+}
+
+.buscador {
+    display: flex;
+    
+}
+
+.buscador, .logo, .botones-sesion{
+    background-color: rgb(45, 45, 145);
+    padding: 5px;
+}
+
+nav {
+    background-color: #0f1566;
+    color: #fff;
+}
+
+/* Contenedor del menú */
+.nav-contenedor {
+    display: flex;
+    background-color: #0f1566;
+}
+
+/* Lista de navegación */
+.nav-menu {
+    list-style: none;
+    margin: 0 auto;
+    padding: 0 auto;
+    background-color: #0f1566;
+}
+
+.nav-menu li {
+    position: relative; /* Necesario para el menú desplegable */
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: #ffffff;
+    padding: 10px 15px;
+    display: block;
+    background-color: #0f1566;
+}
+
+.nav-menu a:hover {
+    background-color: #3e4e92;
+}
+
+/* Menú desplegable */
+.menu-desplegable {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: none; /* Oculto por defecto */
+    z-index: 9999;
+}
+
+.menu-desplegable li a {
+    padding: 10px 15px;
+    color: #000000;
+    background-color: white;
+}
+
+.menu-desplegable li a:hover {
+    background-color: #e8ebff;
+}
+
+/* Mostrar el menú desplegable al pasar el mouse */
+.nav-menu li:hover .menu-desplegable {
+    display: block;
+}
+
+.carousel-item {
+    transition: transform 0.6s ease-in-out;
+    
+}
+
+.carousel-contenedor {
+    display: flex;
+    margin: 0 auto;
+    max-width: 100%;
+    width: 100%;
+}
+
+@media (min-width: 768px) {
+    .carousel-contenedor {
+        width: 60%;
+        max-width: 100%;
+    }
+}
+
+.carousel img {
+    width: 100%;
+    height: auto; /* Mantiene la proporción de las imágenes */
+}
+
+/* Menu extra debajo del carousel */
+
+.menu-extra {
+    background-color: #0f1566;
+    border-top: 3px solid white;
+}
+
+.menu-extra a {
+    text-decoration: none;
+}
+
+.menu-boton {
+    background-color: #0f1566;
+    color: white;
+    padding: 20px;
+    border: 2px solid transparent;
+    width: 400px;
+    cursor: pointer;
+    text-align: center;;
+}
+
+.menu-boton.desaparecer {
+    border-color: #ffffff; /* Borde visible al estar seleccionado */
+}
+
+.menu-boton:hover {
+    background-color: #0056b3; /* Cambio de color al pasar el mouse */
+}
+
+.dropdown ul {
+    border-radius: 0;
+    margin: 0;
+    padding: 0;
+}
+
+.dropdown-menu li{
+    border-radius: 0;
+    border: 1px solid green;
+    text-align: center;
+    width: 400px;
+    margin: 0 auto;
+    padding: 0 auto;
+    border: 2px solid grey;
+    background: white;
+}
+
+/* Parte Main: Cartas */
+
+
+.contenedor-seccion {
+    background-color: #fff;
+    margin: 10px;
+    padding-bottom: 1px;
+}
+
+.encabezado1 {
+    text-align: center;
+    background-color: #0f1566;
+    width: 100%;
+    color: #fff;
+    font-size: 15px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    margin: 0 auto;
+}
+
+.contenedor-cartas {
+    text-align: center;
+    background-color: #fff;
+}
+
+.carta {
+    width: 220px;
+    margin: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    background: white;
+    overflow: hidden;
+    position: relative;
+}
+
+.carta img {
+    display: block;
+    position: relative;
+    width: 218px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.carta:hover img {
+    transform: scale(1.2);
+}
+
+.carta-artista {
+    text-decoration: none;
+    background: white;
+    padding: 20px;
+}
+
+.carta-ciudad {
+    background: white;
+    border-top: 1px dashed rgba(0, 0, 0, 0.3);
+    
+}
+
+.carta-evento {
+    background-color: #3e4e92;
+    color: white;
+    font-size: 20px;
+    margin: 0 auto;
+    padding: 3px 0 3px 0px;
+    font-weight: bold;
+}
+
+
+/* Contenedores aside */
+
+.contenedor-aside {
+    margin: 10px auto;
+    width: 100%;
+    min-width: 300px;
+}
+
+.contenedor-aside-titulo {
+    background: white;
+    margin: 0 auto;
+    padding: 0 auto;
+    font-size: 15px;
+    font-weight: bolder;
+    color: #0f1566;
+}
+
+.contenedor-utilidad {
+    background: white;
+    padding: 10px 10px 2px 10px;
+}
+
+.contenedor-proxeventos {
+   
+    background-color: #fff;
+    margin-top: 10px;
+    padding: 10px 10px 2px 10px;
+}
+
+.contenedor-aside-cartas {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    margin: 0 auto;
+    padding: 0 auto;
+    background-color: #fff;
+}
+
+.contenedor-proxeventos-artista {
+    background: white;
+    font-size: 20px;
+    font-weight: bold;
+    color: grey;
+    text-align: center;
+}
+
+/* Contenedor footer */
+
+.contenedor-footer {
+    display: flex;
+    flex-flow: row wrap;
+    background-color: #202020;
+    align-items: center;
+    padding: 20px;
+}
+
+.contenedor-footer a {
+    text-decoration: none;
+}
+
+.contenedor-footer {
+    position: relative;
+    color: white;
+    background-color: #202020;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+.contenedor-footer-lista {
+    background: #202020;
+    position: relative;
+}
+
+.contenedor-footer-lista ul {
+    background: #202020;
+
+    padding: 0;
+    margin: 20px;
+}
+
+.contenedor-footer-lista ul li {
+    background-color: #202020;
+}
+
+
+.contenedor-footer-lista ul li a {
+    color: white;
+    background-color: #202020;
+}
+
+/* Contenedor Banner */
+
+.contenedor-banner {
+    color: white;
+}
+
+.contenedor-banner, .contenedor-banner-icons, span {
+    background-color: #202020;
+    margin-top: 5px;
+}
+
+.contenedor-banner p {
+    display: inline-block;
+    margin-bottom: 10px;
+    background-color: #202020;
+    width: 50%;
+}
+
+
+
+/* Iconos */
+
+.fa {
+    margin: 10px 0px 10px 10px;
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+    text-decoration: none;
+}
+  
+  /* Add a hover effect if you want */
+.fa:hover {
+    opacity: 0.7;
+}
+  
+  /* Set a specific color for each brand */
+  
+  /* Facebook */
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+    border-radius: 50%;
+}
+  
+  /* Twitter */
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+    border-radius: 50%;
+}
+  
+.fa-instagram {
+    background: red;
+    color: white;
+    border-radius: 50%;
+}
+
+.contenedor-footer-final {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background: #495a4c;
+}
+
+.contenedor-footer-final p {
+    text-align: center;
+    margin: 0 auto;
+    padding: 0;
+    background: #495a4c;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+

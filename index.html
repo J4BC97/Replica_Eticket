@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eticket</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="/assets/styles.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+</head>
+<body>
+    <header>
+        <div class="contenedor-header">
+                <img class="logo" src="/assets/logoplecabigmosaico_co.png">
+                
+                <form class="buscador" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Buscar eventos y/o cantantes" aria-label="Buscar">
+                    <button class="btn btn-light" type="submit">Buscar</button>
+                </form>
+
+            <div class="botones-sesion">
+                <a class="btn btn-primary" href="#" role="button">Iniciar sesion</a>
+                <a class="btn btn-primary" href="#" role="button">Registrate</a>
+            </div>
+        </div>
+    </header>
+
+    <nav>
+        <div class="nav-contenedor">
+            <ul class="d-flex flex-wrap nav-menu">
+                <li class="d-none d-sm-block"><a href="#">Conciertos</a></li>
+                <li class="d-none d-sm-block"><a href="#">Deportes</a></li>
+                <li class="d-none d-sm-block"><a href="#">Teatro</a></li>
+                <li class="d-none d-sm-block"><a href="#">Culturales</a></li>
+                <li class="d-none d-sm-block"><a href="#">Comedia</a></li>
+                <li class="d-none d-sm-block"><a href="#">Familiares</a></li>
+                <li class="d-none d-sm-block"><a href="#">Congresos</a></li>
+                <li class="d-none d-sm-block"><a href="#">Festivales</a></li>
+                <li class="d-block d-sm-none">
+                    <a class="" href="#">Categorias</a>
+                    <ul class="menu-desplegable">
+                        <li><a href="#">Conciertos</a></li>
+                        <li><a href="#">Deportes</a></li>
+                        <li><a href="#">Teatro</a></li>
+                        <li><a href="#">Culturales</a></li>
+                        <li><a href="#">Comedia</a></li>
+                        <li><a href="#">Familiares</a></li>
+                        <li><a href="#">Congresos</a></li>
+                        <li><a href="#">Festivales</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Puntos de venta</a></li>
+                <li>
+                    <a href="#">Ayuda</a>
+                    <ul class="menu-desplegable">
+                        <li><a href="#">Vende tu evento con nosotros</a></li>
+                        <li><a href="#">¡Recoge tus boletos!</a></li>
+                        <li><a href="#">¿Donde comprar?</a></li>
+                        <li><a href="#">Suscribete al boletin</a></li>
+                        <li><a href="#">Promociones</a></li>
+                        <li><a href="#">Preguntas frecuentes</a></li>
+                        <li><a href="#">Comunicados</a></li>
+                        <li><a href="#">Contacto</a></li>
+                    </ul>
+                </li>   
+            </ul>
+        </div>
+
+        <div id="myCarousel" class="carousel slide carousel-contenedor" data-bs-ride="carousel" data-bs-interval="3000">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="/assets/carousel1.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="/assets/carousel2.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="/assets/carousel3.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="/assets/carousel4.jpg" class="d-block w-100" alt="...">
+              </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="d-flex dropdown menu-extra">
+        <a class="dropdown-toggle menu-boton" id="desaparecerElemento" data-bs-toggle="dropdown">TODOS LOS EVENTOS</a>
+        <ul class="dropdown-menu">
+            <li><a href="#" class="dropdown-item">TODOS LOS EVENTOS</a></li>
+            <li><a href="#" class="dropdown-item">Conciertos</a></li>
+            <li><a href="#" class="dropdown-item">Teatro</a></li>
+            <li><a href="#" class="dropdown-item">Deportes</a></li>
+            <li><a href="#" class="dropdown-item">CULTURALES</a></li>
+            <li><a href="#" class="dropdown-item">FAMILIARES</a></li>
+            <li><a href="#" class="dropdown-item">CONGRESOS</a></li>
+            <li><a href="#" class="dropdown-item">FESTIVALES</a></li>
+            <li><a href="#" class="dropdown-item">COMEDIA</a></li>
+        </ul>
+
+        <a href="#" class="dropdown-toggle menu-boton" id="desaparecerElemento" data-bs-toggle="dropdown">TODO COLOMBIA</a>
+        <ul class="dropdown-menu">
+            <li><a href="#" class="dropdown-item">TODO COLOMBIA</a></li>
+            <li><a href="#" class="dropdown-item">Conciertos</a></li>
+            <li><a href="#" class="dropdown-item">Teatro</a></li>
+            <li><a href="#" class="dropdown-item">Deportes</a></li>
+            <li><a href="#" class="dropdown-item">CULTURALES</a></li>
+            <li><a href="#" class="dropdown-item">FAMILIARES</a></li>
+            <li><a href="#" class="dropdown-item">CONGRESOS</a></li>
+            <li><a href="#" class="dropdown-item">FESTIVALES</a></li>
+            <li><a href="#" class="dropdown-item">COMEDIA</a></li>
+        </ul>
+    </div>
+
+    <main class="d-flex flex-wrap">
+            <section>
+                <div class="contenedor-seccion">
+                    <h1 class="encabezado1">EVENTOS EN TU CIUDAD</h1>
+                    <div class="contenedor-cartas d-flex flex-wrap ">
+                        <div class="carta">
+                            <img src="./assets/cartas/apolo7.png">
+                            <div class="carta-artista">
+                                APOLO 7
+                            </div >
+
+                            <div class="carta-ciudad">
+                                BOGOTA
+                            </div>
+
+                            <div class="carta-evento">
+                                Ver evento
+                            </div>
+                            
+                        </div>
+
+                        <div class="carta">
+                            <img src="./assets/cartas/carta2.png">
+                            <div class="carta-artista">
+                                APOLO 7
+                            </div >
+
+                            <div class="carta-ciudad">
+                                BOGOTA
+                            </div>
+
+                            <div class="carta-evento">
+                                Ver evento
+                            </div>
+                        </div>
+
+                        <div class="carta">
+                            <img src="./assets/cartas/carta3.png">
+                            <div class="carta-artista">
+                                APOLO 7
+                            </div >
+
+                            <div class="carta-ciudad">
+                                BOGOTA
+                            </div>
+
+                            <div class="carta-evento">
+                                Ver evento
+                            </div>
+                        </div>
+
+                        <div class="carta">
+                            <img src="./assets/cartas/carta4.png">
+                            <div class="carta-artista">
+                                APOLO 7
+                            </div >
+
+                            <div class="carta-ciudad">
+                                BOGOTA
+                            </div>
+
+                            <div class="carta-evento">
+                                Ver evento
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <aside>
+                <div class="contenedor-aside">
+                    <div class="contenedor-utilidad">
+                        <div class="contenedor-aside-titulo">Informacion de utilidad</div>
+                        <hr class="my-4">
+                    </div>
+                    <div class="contenedor-proxeventos">
+                        <div class="contenedor-aside-titulo">Espectaculos Proximos</div>
+                        <hr class="my-4">
+                        <div class="contenedor-aside-cartas">
+                            <div class="contenedor-proxeventos-artista">NASA HISTOIRES</div>
+                            <div class="carta text-center">
+                                <img src="./assets/cartas-aside/carta-aside1.png">
+                                <div class="carta-evento">Ver evento</div>                                                                           
+                            </div>
+
+                            <div class="contenedor-proxeventos-artista">HAASH</div>
+                            <div class="carta text-center">
+                                <img src="./assets/cartas-aside/carta-aside2.png">
+                                <div class="carta-evento">Ver evento</div>
+                            </div>
+
+                            <div class="contenedor-proxeventos-artista">Maca y Gero</div>
+                            <div class="carta text-center">
+                                <img src="./assets/cartas-aside/carta-aside3.png">
+                                <div class="carta-evento">Ver evento</div>
+                            </div>
+
+                            <div class="contenedor-proxeventos-artista">Leo Rizzi</div>
+                            <div class="carta text-center">
+                                <img src="./assets/cartas-aside/carta-aside4.png">
+                                <div class="carta-evento">Ver evento</div>
+                            </div>
+
+                            <div class="contenedor-proxeventos-artista">VASSAR FERIA</div>
+                            <div class="carta text-center">
+                                <img src="./assets/cartas-aside/carta-aside5.png">
+                                <div class="carta-evento">Ver evento</div>
+                            </div>
+                        </div>
+            
+                    </div>
+                </div>
+            </aside>
+    </main>
+
+    <footer>
+        <div class="contenedor-footer">
+            <div class="contenedor-footer-lista">
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Conciertos</a></li>
+                    <li><a href="#">Deportes</a></li>
+                    <li><a href="#">Teatro</a></li>
+                    <li><a href="#">Culturales</a></li>
+                    <li><a href="#">Comedia</a></li>
+                    <li><a href="#">Familiares</a></li>
+                    <li><a href="#">Congresos</a></li>
+                    <li><a href="#">Festivales</a></li>
+                </ul>
+            </div>
+
+            <div class="contenedor-footer-lista">
+                <ul>
+                    <li><a href="#">¡Recoge tus boletos!</a></li>
+                    <li><a href="#">Ubicacion de Puntos de Venta</a></li>
+                    <li><a href="#">Suscribete al boletin</a></li>
+                    <li><a href="#">Promociones</a></li>
+                    <li><a href="#">Vende tus boletos en eticket</a></li>
+                    <li><a href="#">Preguntas Frecuentes</a></li>
+                    <li><a href="#">Comunicados</a></li>
+                    <li><a href="#">Contactanos</a></li>
+                    <li><a href="#">Politicas de Privacidad</a></li>
+                    <li><a href="#">Terminos y Condiciones</a></li>
+                    <li><a href="#">PQRS</a></li>
+                    <li><a href="#">PULEP</a></li>
+                    <li><a href="#">SIC</a></li>
+                </ul>
+            </div>
+
+            <div class="contenedor-banner">
+                <img src="./assets/bannerwsp.gif">
+                <div class="contenedor-banner-icons">
+                    <a href="#" class="fa fa-twitter"></a>
+                    <span>Siguenos</span>
+                    <a href="#" class="fa fa-instagram"></a>
+                    <span>Miranos</span>
+                    <a href="#" class="fa fa-facebook"></a>
+                    <span>Quierenos</span>
+                </div>
+                <p>La vida esta llena de experiencias... 
+                    #experienciaeticket</p>
+            </div>
+        </div>
+
+        <div class="contenedor-footer-final">
+            <p>
+                © 2024 :: eticket :: Todos los Derechos Reservados :: https://www.eticket.co/
+            </p>
+        </div>
+        
+
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="./scripts/script.js"></script>
+</body>
+</html>
